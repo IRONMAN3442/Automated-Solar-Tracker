@@ -1,0 +1,35 @@
+1. Include necessary(Servo and Time) libraries.
+2. Define necessary functions.
+3. Define lcd pins
+3. Calculate the calibrated value 
+4. Give a predefined value for start time 
+5. Set count to zero
+3. Define Setup function
+  4. Attach servo motors to the digital pins of arduino board.
+  5. Write the initial values for servo motors.
+  6. Start Serial Communication
+  7. Start LCD
+7. Define Loop function
+  8. Read the sensor input values(ldr inputs) and store in variables(s_T,s_B,s_L,s_R).
+  9. Calculate the average values of the sensor inputs.(avgT, avgB, avgL, avgR)
+  10. if any of the sensor input value is less than 200 then
+      11. check if current time is eqaul to start time(predefined).
+          12. Read the position of servomotor 
+          13. update the position according to predefined values coressponding to the current time
+          14. print the servo value in serial monitor and lcd
+      14. else
+          15. Update start time by adding 3600 to it
+          16. Update count value
+  17. else
+      18. Compare the average values 
+          19. Call the functions with sensor input values as arguments
+20. Function
+      21. Read the position of servomotor
+      22. compare the average values of top and bottom
+          23. update the position of servo motor according to calibrated value
+          14. print the servo value in serial monitor and lcd
+      24. else
+          25. update the position of servo motor according to calibrated value
+          14. print the servo value in serial monitor and lcd
+26. Repeat the same above function for average values of left and right.
+        

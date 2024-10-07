@@ -1,0 +1,7 @@
+Hardware Specifications :
+Resistor - 10k Ohm
+Solar Panel-6v-100 mah,70mm*70mm*03mm
+LDR - 0-1023 , 3.3V-5V.
+LCD - 3.3V or 5V , jhd162a 16x2 lcd
+Servo Motor- Operating Vol=3.0V~7.2V,4.8V (Torque)
+
